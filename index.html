@@ -77,6 +77,44 @@
 
         <button type="submit" class="login-button">Login</button>
     </<form action="welcome.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeKicks Login</title>
+    
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link to JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login to ShoeKicks</h2>
+    <form action="welcome.html">
+        <label for="name">Customer Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="not-robot" required>
+            <label for="not-robot">I am not a robot</label>
+        </div>
+
+        <button type="submit" class="login-button">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
 
 </div>
 
