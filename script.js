@@ -1,26 +1,22 @@
-document.querySelector('.login-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const customerName = document.getElementById('customerName').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const notRobot = document.getElementById('notRobot').checked;
+// JavaScript for form validation on the login page
 
-    if (customerName && email && password && notRobot) {
-        alert("Login successful! Welcome to ShoeKicks.");
-    } else {
-        alert("Please fill out all fields and verify you are not a robot.");
-    }
-});
-document.querySelector('.login-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const customerName = document.getElementById('customerName').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const notRobot = document.getElementById('notRobot').checked;
+// Wait for the DOM content to be loaded before executing the script
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.querySelector("form");
 
-    if (customerName && email && password && notRobot) {
-        window.location.href = "welcome.html"; // Redirect to welcome page
-    } else {
-        alert("Please fill out all fields and verify you are not a robot.");
-    }
+    loginForm.addEventListener("submit", function (event) {
+        // Get form fields
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const robotCheck = document.getElementById("not-robot").checked;
+
+        // Validate fields
+        if (!name || !email || !password || !robotCheck) {
+            alert("Please fill in all fields and verify that you are not a robot.");
+            event.preventDefault(); // Prevent form submission if validation fails
+        } else {
+            alert("Login successful!");
+        }
+    });
 });
