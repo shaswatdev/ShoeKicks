@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeKicks - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .product button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .product button.wishlist {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.png" alt="ShoeKicks Logo">
+    <nav>
+        <a href="#">Profile</a>
+        <a href="#">Cart</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Orders</a>
+    </nav>
+</div>
+
+<div class="product-container">
+    <div class="product">
+        <img src="shoe1.jpg" alt="Shoe 1">
+        <p>$50</p>
+        <button>Add to Cart</button>
+        <button class="wishlist">Add to Wishlist</button>
+    </div>
+    <div class="product">
+        <img src="shoe2.jpg" alt="Shoe 2">
+        <p>$65</p>
+        <button>Add to Cart</button>
+        <button class="wishlist">Add to Wishlist</button>
+    </div>
+    <div class="product">
+        <img src="shoe3.jpg" alt="Shoe 3">
+        <p>$80</p>
+        <button>Add to Cart</button>
+        <button class="wishlist">Add to Wishlist</button>
+    </div>
+</div>
+
+</body>
+</html>
+
