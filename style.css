@@ -1,100 +1,146 @@
-/* Global Styles */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
-}
-
-/* Login Container */
-.login-container {
+    padding: 0;
     background-color: white;
-    padding: 2rem;
+}
+
+/* Login Page Styling */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
-.login-container h1 {
+h2 {
     color: green;
-    margin-bottom: 1rem;
+    text-align: center;
 }
 
-/* Form Styles */
-.login-form .form-group {
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-/* Labels and Inputs */
-.login-form label {
-    color: #333;
-    font-weight: bold;
+label {
     display: block;
-    margin-bottom: 0.3rem;
+    margin: 10px 0 5px;
+    color: #333;
 }
 
-.login-form input[type="text"],
-.login-form input[type="email"],
-.login-form input[type="password"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
-.login-form input[type="checkbox"] {
-    margin-right: 0.3rem;
-}
-
-/* Checkbox */
-.checkbox-group {
+.checkbox-container {
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
-    color: red;
 }
 
-/* Button Styles */
-.login-btn {
+.login-button {
+    width: 100%;
+    padding: 10px;
     background-color: green;
     color: white;
-    padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    width: 100%;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.login-btn:hover {
+.login-button:hover {
     background-color: darkgreen;
 }
-/* Welcome Page Styles */
-.welcome-container {
+
+/* Welcome Page Styling */
+.welcome-message {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.welcome-container h1 {
     color: blue;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    text-align: center;
 }
 
-.welcome-container p {
-    color: #333;
-    font-size: 1.2rem;
+/* Home Page Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header img {
+    height: 40px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #ddd;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product button.wishlist {
+    background-color: red;
+}
+
+.product button:hover {
+    background-color: darkgreen;
+}
+
+.product button.wishlist:hover {
+    background-color: darkred;
 }
